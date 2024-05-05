@@ -1,0 +1,34 @@
+*.DS_Store
+*.DS_Store?
+*._*
+*.Spotlight-V100
+*.Trashes
+*.ehthumbs.db
+*Thumbs.db
+~$*.ppt*
+*.swp
+
+#Android Specific Ignores for different Platforms
+#Configuration don't need to be ignored specifically because they are always inside the Platform folders
+
+/ARM
+*/ARM/*
+**/ARM/
+
+/ARM64
+*/ARM64/*
+**/ARM64/
+
+/x64
+*/x64/*
+**/x64/
+
+/x86
+*/x86/*
+**/x86/
+
+#Visual Studio Specific Ignores
+.vs
+.vs/*
+*/.vs/*
+

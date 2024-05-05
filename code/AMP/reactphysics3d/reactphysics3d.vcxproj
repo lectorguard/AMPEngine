@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{a268d2eb-dba1-4926-a2ac-972bffbf49e8}</ProjectGuid>
+    <Keyword>Android</Keyword>
+    <RootNamespace>reactphysics3d</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationType>Android</ApplicationType>
+    <ApplicationTypeRevision>3.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(ProjectDir);$(LLVMToolchainPrebuiltRoot)\lib64\clang\$(LLVMVersion)\include</IncludePath>
+    <ExecutablePath>$(SolutionDir);$(LLVMToolchainPrebuiltRoot)\bin;$(ToolchainPrebuiltPath)\bin;$(MSBuild_ExecutablePath);$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(ProjectDir);$(LLVMToolchainPrebuiltRoot)\lib64\clang\$(LLVMVersion)\include</IncludePath>
+    <ExecutablePath>$(SolutionDir);$(LLVMToolchainPrebuiltRoot)\bin;$(ToolchainPrebuiltPath)\bin;$(MSBuild_ExecutablePath);$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <IncludePath>$(ProjectDir);$(LLVMToolchainPrebuiltRoot)\lib64\clang\$(LLVMVersion)\include</IncludePath>
+    <ExecutablePath>$(SolutionDir);$(LLVMToolchainPrebuiltRoot)\bin;$(ToolchainPrebuiltPath)\bin;$(MSBuild_ExecutablePath);$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <IncludePath>$(ProjectDir);$(LLVMToolchainPrebuiltRoot)\lib64\clang\$(LLVMVersion)\include</IncludePath>
+    <ExecutablePath>$(SolutionDir);$(LLVMToolchainPrebuiltRoot)\bin;$(ToolchainPrebuiltPath)\bin;$(MSBuild_ExecutablePath);$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <IncludePath>$(ProjectDir);$(LLVMToolchainPrebuiltRoot)\lib64\clang\$(LLVMVersion)\include</IncludePath>
+    <ExecutablePath>$(SolutionDir);$(LLVMToolchainPrebuiltRoot)\bin;$(ToolchainPrebuiltPath)\bin;$(MSBuild_ExecutablePath);$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <IncludePath>$(ProjectDir);$(LLVMToolchainPrebuiltRoot)\lib64\clang\$(LLVMVersion)\include</IncludePath>
+    <ExecutablePath>$(SolutionDir);$(LLVMToolchainPrebuiltRoot)\bin;$(ToolchainPrebuiltPath)\bin;$(MSBuild_ExecutablePath);$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <IncludePath>$(ProjectDir);$(LLVMToolchainPrebuiltRoot)\lib64\clang\$(LLVMVersion)\include</IncludePath>
+    <ExecutablePath>$(SolutionDir);$(LLVMToolchainPrebuiltRoot)\bin;$(ToolchainPrebuiltPath)\bin;$(MSBuild_ExecutablePath);$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <IncludePath>$(ProjectDir);$(LLVMToolchainPrebuiltRoot)\lib64\clang\$(LLVMVersion)\include</IncludePath>
+    <ExecutablePath>$(SolutionDir);$(LLVMToolchainPrebuiltRoot)\bin;$(ToolchainPrebuiltPath)\bin;$(MSBuild_ExecutablePath);$(PATH);</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="configuration.h" />
+    <ClInclude Include="decimal.h" />
+    <ClInclude Include="reactphysics3d.h" />
+    <ClInclude Include="body\Body.h" />
+    <ClInclude Include="body\CollisionBody.h" />
+    <ClInclude Include="body\RigidBody.h" />
+    <ClInclude Include="collision\ContactPointInfo.h" />
+    <ClInclude Include="collision\ContactManifoldInfo.h" />
+    <ClInclude Include="collision\broadphase\BroadPhaseAlgorithm.h" />
+    <ClInclude Include="collision\broadphase\DynamicAABBTree.h" />
+    <ClInclude Include="collision\narrowphase\CollisionDispatch.h" />
+    <ClInclude Include="collision\narrowphase\DefaultCollisionDispatch.h" />
+    <ClInclude Include="collision\narrowphase\GJK\VoronoiSimplex.h" />
+    <ClInclude Include="collision\narrowphase\GJK\GJKAlgorithm.h" />
+    <ClInclude Include="collision\narrowphase\SAT\SATAlgorithm.h" />
+    <ClInclude Include="collision\narrowphase\NarrowPhaseAlgorithm.h" />
+    <ClInclude Include="collision\narrowphase\SphereVsSphereAlgorithm.h" />
+    <ClInclude Include="collision\narrowphase\CapsuleVsCapsuleAlgorithm.h" />
+    <ClInclude Include="collision\narrowphase\SphereVsCapsuleAlgorithm.h" />
+    <ClInclude Include="collision\narrowphase\SphereVsConvexPolyhedronAlgorithm.h" />
+    <ClInclude Include="collision\narrowphase\CapsuleVsConvexPolyhedronAlgorithm.h" />
+    <ClInclude Include="collision\narrowphase\ConvexPolyhedronVsConvexPolyhedronAlgorithm.h" />
+    <ClInclude Include="collision\shapes\AABB.h" />
+    <ClInclude Include="collision\shapes\ConvexShape.h" />
+    <ClInclude Include="collision\shapes\ConvexPolyhedronShape.h" />
+    <ClInclude Include="collision\shapes\ConcaveShape.h" />
+    <ClInclude Include="collision\shapes\BoxShape.h" />
+    <ClInclude Include="collision\shapes\CapsuleShape.h" />
+    <ClInclude Include="collision\shapes\CollisionShape.h" />
+    <ClInclude Include="collision\shapes\ConvexMeshShape.h" />
+    <ClInclude Include="collision\shapes\SphereShape.h" />
+    <ClInclude Include="collision\shapes\TriangleShape.h" />
+    <ClInclude Include="collision\shapes\ConcaveMeshShape.h" />
+    <ClInclude Include="collision\shapes\HeightFieldShape.h" />
+    <ClInclude Include="collision\RaycastInfo.h" />
+    <ClInclude Include="collision\ProxyShape.h" />
+    <ClInclude Include="collision\TriangleVertexArray.h" />
+    <ClInclude Include="collision\PolygonVertexArray.h" />
+    <ClInclude Include="collision\TriangleMesh.h" />
+    <ClInclude Include="collision\PolyhedronMesh.h" />
+    <ClInclude Include="collision\HalfEdgeStructure.h" />
+    <ClInclude Include="collision\CollisionDetection.h" />
+    <ClInclude Include="collision\NarrowPhaseInfo.h" />
+    <ClInclude Include="collision\ContactManifold.h" />
+    <ClInclude Include="collision\ContactManifoldSet.h" />
+    <ClInclude Include="collision\MiddlePhaseTriangleCallback.h" />
+    <ClInclude Include="constraint\BallAndSocketJoint.h" />
+    <ClInclude Include="constraint\ContactPoint.h" />
+    <ClInclude Include="constraint\FixedJoint.h" />
+    <ClInclude Include="constraint\HingeJoint.h" />
+    <ClInclude Include="constraint\Joint.h" />
+    <ClInclude Include="constraint\SliderJoint.h" />
+    <ClInclude Include="engine\CollisionWorld.h" />
+    <ClInclude Include="engine\ConstraintSolver.h" />
+    <ClInclude Include="engine\ContactSolver.h" />
+    <ClInclude Include="engine\DynamicsWorld.h" />
+    <ClInclude Include="engine\EventListener.h" />
+    <ClInclude Include="engine\Island.h" />
+    <ClInclude Include="engine\Material.h" />
+    <ClInclude Include="engine\OverlappingPair.h" />
+    <ClInclude Include="engine\Timer.h" />
+    <ClCompile Include="engine\Timer.cpp" />
+    <ClInclude Include="collision\CollisionCallback.h" />
+    <ClInclude Include="collision\OverlapCallback.h" />
+    <ClInclude Include="mathematics\mathematics.h" />
+    <ClInclude Include="mathematics\mathematics_functions.h" />
+    <ClInclude Include="mathematics\Matrix2x2.h" />
+    <ClInclude Include="mathematics\Matrix3x3.h" />
+    <ClInclude Include="mathematics\Quaternion.h" />
+    <ClInclude Include="mathematics\Transform.h" />
+    <ClInclude Include="mathematics\Vector2.h" />
+    <ClInclude Include="mathematics\Vector3.h" />
+    <ClInclude Include="mathematics\Ray.h" />
+    <ClInclude Include="memory\MemoryAllocator.h" />
+    <ClInclude Include="memory\DefaultPoolAllocator.h" />
+    <ClInclude Include="memory\DefaultSingleFrameAllocator.h" />
+    <ClInclude Include="memory\DefaultAllocator.h" />
+    <ClInclude Include="memory\MemoryManager.h" />
+    <ClInclude Include="containers\Stack.h" />
+    <ClInclude Include="containers\LinkedList.h" />
+    <ClInclude Include="containers\List.h" />
+    <ClInclude Include="containers\Map.h" />
+    <ClInclude Include="containers\Set.h" />
+    <ClInclude Include="containers\Pair.h" />
+    <ClInclude Include="utils\Profiler.h" />
+    <ClInclude Include="utils\Logger.h" />
+    <ClCompile Include="body\Body.cpp" />
+    <ClCompile Include="body\CollisionBody.cpp" />
+    <ClCompile Include="body\RigidBody.cpp" />
+    <ClCompile Include="collision\ContactManifoldInfo.cpp" />
+    <ClCompile Include="collision\broadphase\BroadPhaseAlgorithm.cpp" />
+    <ClCompile Include="collision\broadphase\DynamicAABBTree.cpp" />
+    <ClCompile Include="collision\narrowphase\DefaultCollisionDispatch.cpp" />
+    <ClCompile Include="collision\narrowphase\GJK\VoronoiSimplex.cpp" />
+    <ClCompile Include="collision\narrowphase\GJK\GJKAlgorithm.cpp" />
+    <ClCompile Include="collision\narrowphase\SAT\SATAlgorithm.cpp" />
+    <ClCompile Include="collision\narrowphase\SphereVsSphereAlgorithm.cpp" />
+    <ClCompile Include="collision\narrowphase\CapsuleVsCapsuleAlgorithm.cpp" />
+    <ClCompile Include="collision\narrowphase\SphereVsCapsuleAlgorithm.cpp" />
+    <ClCompile Include="collision\narrowphase\SphereVsConvexPolyhedronAlgorithm.cpp" />
+    <ClCompile Include="collision\narrowphase\CapsuleVsConvexPolyhedronAlgorithm.cpp" />
+    <ClCompile Include="collision\narrowphase\ConvexPolyhedronVsConvexPolyhedronAlgorithm.cpp" />
+    <ClCompile Include="collision\shapes\AABB.cpp" />
+    <ClCompile Include="collision\shapes\ConvexShape.cpp" />
+    <ClCompile Include="collision\shapes\ConvexPolyhedronShape.cpp" />
+    <ClCompile Include="collision\shapes\ConcaveShape.cpp" />
+    <ClCompile Include="collision\shapes\BoxShape.cpp" />
+    <ClCompile Include="collision\shapes\CapsuleShape.cpp" />
+    <ClCompile Include="collision\shapes\CollisionShape.cpp" />
+    <ClCompile Include="collision\shapes\ConvexMeshShape.cpp" />
+    <ClCompile Include="collision\shapes\SphereShape.cpp" />
+    <ClCompile Include="collision\shapes\TriangleShape.cpp" />
+    <ClCompile Include="collision\shapes\ConcaveMeshShape.cpp" />
+    <ClCompile Include="collision\shapes\HeightFieldShape.cpp" />
+    <ClCompile Include="collision\RaycastInfo.cpp" />
+    <ClCompile Include="collision\ProxyShape.cpp" />
+    <ClCompile Include="collision\TriangleVertexArray.cpp" />
+    <ClCompile Include="collision\PolygonVertexArray.cpp" />
+    <ClCompile Include="collision\TriangleMesh.cpp" />
+    <ClCompile Include="collision\PolyhedronMesh.cpp" />
+    <ClCompile Include="collision\HalfEdgeStructure.cpp" />
+    <ClCompile Include="collision\CollisionDetection.cpp" />
+    <ClCompile Include="collision\NarrowPhaseInfo.cpp" />
+    <ClCompile Include="collision\ContactManifold.cpp" />
+    <ClCompile Include="collision\ContactManifoldSet.cpp" />
+    <ClCompile Include="collision\MiddlePhaseTriangleCallback.cpp" />
+    <ClCompile Include="constraint\BallAndSocketJoint.cpp" />
+    <ClCompile Include="constraint\ContactPoint.cpp" />
+    <ClCompile Include="constraint\FixedJoint.cpp" />
+    <ClCompile Include="constraint\HingeJoint.cpp" />
+    <ClCompile Include="constraint\Joint.cpp" />
+    <ClCompile Include="constraint\SliderJoint.cpp" />
+    <ClCompile Include="engine\CollisionWorld.cpp" />
+    <ClCompile Include="engine\ConstraintSolver.cpp" />
+    <ClCompile Include="engine\ContactSolver.cpp" />
+    <ClCompile Include="engine\DynamicsWorld.cpp" />
+    <ClCompile Include="engine\Island.cpp" />
+    <ClCompile Include="engine\Material.cpp" />
+    <ClCompile Include="engine\OverlappingPair.cpp" />
+    <ClCompile Include="collision\CollisionCallback.cpp" />
+    <ClCompile Include="mathematics\mathematics_functions.cpp" />
+    <ClCompile Include="mathematics\Matrix2x2.cpp" />
+    <ClCompile Include="mathematics\Matrix3x3.cpp" />
+    <ClCompile Include="mathematics\Quaternion.cpp" />
+    <ClCompile Include="mathematics\Transform.cpp" />
+    <ClCompile Include="mathematics\Vector2.cpp" />
+    <ClCompile Include="mathematics\Vector3.cpp" />
+    <ClCompile Include="memory\DefaultPoolAllocator.cpp" />
+    <ClCompile Include="memory\DefaultSingleFrameAllocator.cpp" />
+    <ClCompile Include="memory\MemoryManager.cpp" />
+    <ClCompile Include="utils\Profiler.cpp" />
+    <ClCompile Include="utils\Logger.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

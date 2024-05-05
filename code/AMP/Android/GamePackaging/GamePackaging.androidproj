@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <RootNamespace>AMP</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ProjectVersion>1.0</ProjectVersion>
+    <ProjectGuid>{ad7316a7-3495-4c8e-ac43-4f0fe06593d1}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(AndroidTargetsPath)\Android.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <ConfigurationType>Application</ConfigurationType>
+  </PropertyGroup>
+  <Import Project="$(AndroidTargetsPath)\Android.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <AntPackage>
+      <AndroidAppLibName>$(RootNamespace)</AndroidAppLibName>
+    </AntPackage>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <AntPackage>
+      <AndroidAppLibName>$(RootNamespace)</AndroidAppLibName>
+    </AntPackage>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <AntPackage>
+      <AndroidAppLibName>$(RootNamespace)</AndroidAppLibName>
+    </AntPackage>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <AntPackage>
+      <AndroidAppLibName>$(RootNamespace)</AndroidAppLibName>
+    </AntPackage>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <AntPackage>
+      <AndroidAppLibName>$(RootNamespace)</AndroidAppLibName>
+    </AntPackage>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <AntPackage>
+      <AndroidAppLibName>$(RootNamespace)</AndroidAppLibName>
+    </AntPackage>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <AntPackage>
+      <AndroidAppLibName>$(RootNamespace)</AndroidAppLibName>
+    </AntPackage>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <AntPackage>
+      <AndroidAppLibName>$(RootNamespace)</AndroidAppLibName>
+    </AntPackage>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Content Include="assets\3DModels\beer_cloud.obj" />
+    <Content Include="assets\3DModels\CoronaBottle.obj" />
+    <Content Include="assets\3DModels\Ground\Bus.obj" />
+    <Content Include="assets\3DModels\Ground\BusCollider.obj" />
+    <Content Include="assets\3DModels\Ground\car.obj" />
+    <Content Include="assets\3DModels\Ground\carCollider.obj" />
+    <Content Include="assets\3DModels\Ground\Cereal.obj" />
+    <Content Include="assets\3DModels\Ground_T_Fighter.obj" />
+    <Content Include="assets\3DModels\CoronaBottleLarge.obj" />
+    <Content Include="assets\3DModels\T_Fighter.obj" />
+    <Content Include="assets\Animation\AnimatedDefender.glb" />
+    <Content Include="assets\Animation\AnimatedAttacker.glb" />
+    <Content Include="assets\Sound\S_BottleRoll1.wav" />
+    <Content Include="assets\Sound\S_BottleRoll2.wav" />
+    <Content Include="assets\Sound\S_bottlesound1.wav" />
+    <Content Include="assets\Sound\S_bottlesound2.wav" />
+    <Content Include="assets\Sound\S_bottlesound3.wav" />
+    <Content Include="assets\Sound\S_bottlesound4.wav" />
+    <Content Include="assets\Sound\S_button.wav" />
+    <Content Include="assets\Sound\S_fallback.wav" />
+    <Content Include="assets\Sound\S_jump.wav" />
+    <Content Include="assets\Sound\S_run.wav" />
+    <Content Include="assets\Sound\S_sip1.wav" />
+    <Content Include="assets\Sound\S_sip2.wav" />
+    <Content Include="assets\Sound\S_sip3.wav" />
+    <Content Include="assets\Sound\S_sip4.wav" />
+    <Content Include="assets\Sound\S_throw.wav" />
+    <Content Include="assets\Sound\S_Titlesound.wav" />
+    <Content Include="assets\Sound\S_vomit1.wav" />
+    <Content Include="assets\Sound\S_vomit2.wav" />
+    <Content Include="assets\Sound\S_vomit3.wav" />
+    <Content Include="assets\Textures\beerIconAlpha.png" />
+    <Content Include="assets\Shader\AnimationShader.glsl" />
+    <Content Include="assets\Shader\CustomFrameBufferShader.glsl" />
+    <Content Include="assets\Shader\ImageShader.glsl" />
+    <Content Include="assets\Shader\Transparent_Mesh_Shader.glsl" />
+    <Content Include="assets\Shader\ProgressBarShader.glsl" />
+    <Content Include="assets\Shader\SpotLightShader.glsl" />
+    <Content Include="assets\Textures\black.png" />
+    <Content Include="assets\Textures\CoronaBottle.jpg" />
+    <Content Include="assets\Textures\CoronaBottleAlpha.png" />
+    <Content Include="assets\Textures\CoronaBottleFrameRed.png" />
+    <Content Include="assets\Textures\CoronaBottleFrameYellow.png" />
+    <Content Include="assets\Textures\DrunkenCloud.png" />
+    <Content Include="assets\Textures\EditorButtons\bot.png" />
+    <Content Include="assets\Textures\Ground\bus.png" />
+    <Content Include="assets\Textures\Ground\car.png" />
+    <Content Include="assets\Textures\Ground\cereal.png" />
+    <Content Include="assets\Textures\Menu\Header_main_bg.png" />
+    <Content Include="assets\Textures\Menu\OnlineGameButton.png" />
+    <Content Include="assets\Textures\Menu\Searching.png" />
+    <Content Include="assets\Textures\Menu\TutorialButton.png" />
+    <Content Include="assets\Textures\menu_bg.png" />
+    <Content Include="assets\Textures\Player\skin_0.png" />
+    <Content Include="assets\Textures\Player\skin_1.png" />
+    <Content Include="assets\Textures\Player\skin_2.png" />
+    <Content Include="assets\Textures\Player\skin_3.png" />
+    <Content Include="assets\Textures\Slider\BoxForSlider.png" />
+    <Content Include="assets\Textures\EditorButtons\forward.png" />
+    <Content Include="assets\Textures\EditorButtons\in.png" />
+    <Content Include="assets\Textures\EditorButtons\left.png" />
+    <Content Include="assets\Textures\EditorButtons\menu.png" />
+    <Content Include="assets\Textures\EditorButtons\out.png" />
+    <Content Include="assets\Textures\EditorButtons\right.png" />
+    <Content Include="assets\Textures\Slider\slider.png" />
+    <Content Include="assets\Textures\T_Fighter.png" />
+    <Content Include="assets\Textures\WaitForPlayer.png" />
+    <Content Include="assets\Textures\WASTED.png" />
+    <Content Include="assets\Textures\WIN.png" />
+    <Content Include="assets\Font\default.bmp" />
+    <Content Include="assets\Shader\DefaultFrameBufferShader.glsl" />
+    <Content Include="assets\Shader\MeshShader.glsl" />
+    <Content Include="assets\Shader\SimpleShader.glsl">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\Shader\FontShader.glsl" />
+    <Content Include="assets\Shader\Skybox.glsl" />
+    <Content Include="res\mipmap-hdpi\ic_launcher.png" />
+    <Content Include="res\mipmap-mdpi\ic_launcher.png" />
+    <Content Include="res\mipmap-xhdpi\ic_launcher.png" />
+    <Content Include="res\mipmap-xxhdpi\ic_launcher.png" />
+    <Content Include="res\mipmap-xxxhdpi\ic_launcher.png" />
+    <Content Include="res\values\strings.xml" />
+    <AntBuildXml Include="build.xml" />
+    <AndroidManifest Include="AndroidManifest.xml" />
+    <AntProjectPropertiesFile Include="project.properties" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GameNativeActivity\GameNativeActivity.vcxproj">
+      <Project>{5355ea5a-bce0-471e-be01-ef032aca6f7e}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(AndroidTargetsPath)\Android.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

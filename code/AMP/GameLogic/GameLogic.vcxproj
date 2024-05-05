@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{b20004d9-90e8-4a12-864b-5078d854bcfe}</ProjectGuid>
+    <Keyword>Android</Keyword>
+    <RootNamespace>GameLogic</RootNamespace>
+    <MinimumVisualStudioVersion>14.0</MinimumVisualStudioVersion>
+    <ApplicationType>Android</ApplicationType>
+    <ApplicationTypeRevision>3.0</ApplicationTypeRevision>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>Clang_5_0</PlatformToolset>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)\AMP_Engine;$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)\AMP_Engine;$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)\AMP_Engine;$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)\AMP_Engine;$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)\AMP_Engine;$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)\AMP_Engine;$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)\AMP_Engine;$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(SolutionDir)\AMP_Engine;$(StlIncludeDirectories);$(Sysroot)\usr\include;$(Sysroot)\usr\include\$(AndroidHeaderTriple);$(VS_NdkRoot)\sources\android\support\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CppLanguageStandard>c++1z</CppLanguageStandard>
+      <ExceptionHandling>Enabled</ExceptionHandling>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Actors\Attacker_Network.cpp" />
+    <ClCompile Include="Actors\Attacker_Streamed.cpp" />
+    <ClCompile Include="Actors\Defender_Streamed.cpp" />
+    <ClCompile Include="Actors\Ground_Client.cpp" />
+    <ClCompile Include="Actors\MatchMaker.cpp" />
+    <ClCompile Include="Actors\MenuUI.cpp" />
+    <ClCompile Include="Actors\PickUpActor.cpp" />
+    <ClCompile Include="Actors\Environment.cpp" />
+    <ClCompile Include="Actors\ProcessCurrentState.cpp" />
+    <ClCompile Include="Actors\PvP_Game.cpp" />
+    <ClCompile Include="Actors\PvP_Game_Streamed.cpp" />
+    <ClCompile Include="Actors\SendCurrentState.cpp" />
+    <ClCompile Include="Actors\GameSound.cpp" />
+    <ClCompile Include="Actors\ThrowingActor.cpp" />
+    <ClCompile Include="Actors\Attacker_Player.cpp" />
+    <ClCompile Include="Actors\Defender_CPU.cpp" />
+    <ClCompile Include="Actors\Defender_Player.cpp" />
+    <ClCompile Include="Actors\Attacker_CPU.cpp" />
+    <ClCompile Include="Actors\PvE_Game.cpp" />
+    <ClCompile Include="Actors\Defender_Network.cpp" />
+    <ClCompile Include="Tasks\DisplayInfos.cpp" />
+    <ClCompile Include="Tasks\MoveBottleToHead.cpp" />
+    <ClCompile Include="Tasks\PostProcessTask.cpp" />
+    <ClCompile Include="Tasks\ProgressBars.cpp" />
+    <ClCompile Include="Tasks\IconTouch.cpp" />
+    <ClCompile Include="Tasks\BottleSpectator.cpp" />
+    <ClCompile Include="Tasks\BottleHitCheck.cpp" />
+    <ClCompile Include="Tasks\BottleValidityCheck.cpp" />
+    <ClCompile Include="Tasks\FollowingCamera.cpp" />
+    <ClCompile Include="Tasks\CollissionCheck.cpp" />
+    <ClCompile Include="Tasks\CharacterFallback.cpp" />
+    <ClCompile Include="Tasks\CharacterControl.cpp" />
+    <ClCompile Include="Tasks\ReceiveGameState.cpp" />
+    <ClCompile Include="Tasks\ReceiveGroundInfo.cpp" />
+    <ClCompile Include="Tasks\ReceiveInput.cpp" />
+    <ClCompile Include="Tasks\Running.cpp" />
+    <ClCompile Include="Tasks\ChangeLane.cpp" />
+    <ClCompile Include="Tasks\CharacterTouch.cpp" />
+    <ClCompile Include="Game\Flunkyball.cpp" />
+    <ClCompile Include="Actors\Ground.cpp" />
+    <ClCompile Include="Tasks\RotatingTask.cpp" />
+    <ClCompile Include="Tasks\SendGameState.cpp" />
+    <ClCompile Include="Tasks\SendGroundInfo.cpp" />
+    <ClCompile Include="Tasks\SendInput.cpp" />
+    <ClCompile Include="Tasks\SpotlightTargetBottle.cpp" />
+    <ClCompile Include="Tasks\ThrowingBottle.cpp" />
+    <ClCompile Include="Actors\ThrowingUI.cpp" />
+    <ClCompile Include="Tasks\WinLoose.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Actors\Attacker_Network.h" />
+    <ClInclude Include="Actors\Attacker_Streamed.h" />
+    <ClInclude Include="Actors\Defender_Streamed.h" />
+    <ClInclude Include="Actors\Ground_Client.h" />
+    <ClInclude Include="Actors\MatchMaker.h" />
+    <ClInclude Include="Actors\MenuUI.h" />
+    <ClInclude Include="Actors\PickUpActor.h" />
+    <ClInclude Include="Actors\Environment.h" />
+    <ClInclude Include="Actors\ProcessCurrentState.h" />
+    <ClInclude Include="Actors\PvP_Game.h" />
+    <ClInclude Include="Actors\PvP_Game_Streamed.h" />
+    <ClInclude Include="Actors\SendCurrentState.h" />
+    <ClInclude Include="Actors\GameSound.h" />
+    <ClInclude Include="Actors\ThrowingActor.h" />
+    <ClInclude Include="Actors\Attacker_Player.h" />
+    <ClInclude Include="Actors\Defender_CPU.h" />
+    <ClInclude Include="Actors\Defender_Player.h" />
+    <ClInclude Include="Actors\Attacker_CPU.h" />
+    <ClInclude Include="Actors\Defender_Network.h" />
+    <ClInclude Include="GameUtility.h" />
+    <ClInclude Include="Actors\PvE_Game.h" />
+    <ClInclude Include="Scenes\ClientScene.h" />
+    <ClInclude Include="Scenes\Menu.h" />
+    <ClInclude Include="Scenes\ServerScene.h" />
+    <ClInclude Include="Tasks\DisplayInfos.h" />
+    <ClInclude Include="Tasks\MoveBottleToHead.h" />
+    <ClInclude Include="Tasks\PostProcessTask.h" />
+    <ClInclude Include="Tasks\ProgressBars.h" />
+    <ClInclude Include="Tasks\IconTouch.h" />
+    <ClInclude Include="Tasks\BottleSpectator.h" />
+    <ClInclude Include="Tasks\BottleHitCheck.h" />
+    <ClInclude Include="Tasks\BottleValidityCheck.h" />
+    <ClInclude Include="Tasks\FollowingCamera.h" />
+    <ClInclude Include="Tasks\CollissionCheck.h" />
+    <ClInclude Include="Tasks\CharacterFallback.h" />
+    <ClInclude Include="Tasks\CharacterControl.h" />
+    <ClInclude Include="Tasks\ReceiveGameState.h" />
+    <ClInclude Include="Tasks\ReceiveGroundInfo.h" />
+    <ClInclude Include="Tasks\ReceiveInput.h" />
+    <ClInclude Include="Tasks\Running.h" />
+    <ClInclude Include="Tasks\ChangeLane.h" />
+    <ClInclude Include="Tasks\CharacterTouch.h" />
+    <ClInclude Include="Game\Flunkyball.h" />
+    <ClInclude Include="Actors\Ground.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Tasks\RotatingTask.h" />
+    <ClInclude Include="Scenes\SingleplayerScene.h" />
+    <ClInclude Include="Tasks\SendGameState.h" />
+    <ClInclude Include="Tasks\SendGroundInfo.h" />
+    <ClInclude Include="Tasks\SendInput.h" />
+    <ClInclude Include="Tasks\SpotlightTargetBottle.h" />
+    <ClInclude Include="Tasks\ThrowingBottle.h" />
+    <ClInclude Include="Actors\ThrowingUI.h" />
+    <ClInclude Include="Tasks\WinLoose.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AMP_Engine\AMP_Engine.vcxproj">
+      <Project>{671d5997-9746-40a5-bbb2-47b5e78daccb}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\AssetLoader\AssetLoader.vcxproj">
+      <Project>{2b08db03-cee3-4612-bdbe-29127431f0de}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>

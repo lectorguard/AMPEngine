@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="AMP_Engine.cpp" />
+    <ClCompile Include="Actor.cpp" />
+    <ClCompile Include="Components\Mesh.cpp" />
+    <ClCompile Include="Components\TextRenderer.cpp" />
+    <ClCompile Include="Graphics\Context.cpp" />
+    <ClCompile Include="Graphics\FrameBuffer.cpp" />
+    <ClCompile Include="Graphics\Shader.cpp" />
+    <ClCompile Include="Static\Camera.cpp" />
+    <ClCompile Include="Physics\PhysicsWrapper.cpp" />
+    <ClCompile Include="Components\DynamicMesh.cpp" />
+    <ClCompile Include="Components\DynamicConcaveMesh.cpp" />
+    <ClCompile Include="Graphics\CubeMap.cpp" />
+    <ClCompile Include="Components\Animation.cpp" />
+    <ClCompile Include="Components\Image.cpp" />
+    <ClCompile Include="Components\TouchGesture.cpp" />
+    <ClCompile Include="TaskController.cpp" />
+    <ClCompile Include="Components\ProgressBar.cpp" />
+    <ClCompile Include="Static\Pixel.cpp" />
+    <ClCompile Include="Components\NetworkUDP.cpp" />
+    <ClCompile Include="Components\NetworkTCP.cpp" />
+    <ClCompile Include="Components\NetworkHTTP.cpp" />
+    <ClCompile Include="Sound\SoundPool.cpp" />
+    <ClCompile Include="Utility\DebugAndTesting.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AMP_Engine.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Actor.h" />
+    <ClInclude Include="Scene.h" />
+    <ClInclude Include="Text.h" />
+    <ClInclude Include="Components\Component.h" />
+    <ClInclude Include="Components\Mesh.h" />
+    <ClInclude Include="Components\TextRenderer.h" />
+    <ClInclude Include="Event\event.h" />
+    <ClInclude Include="Event\EventSystem.h" />
+    <ClInclude Include="Graphics\Context.h" />
+    <ClInclude Include="Graphics\FrameBuffer.h" />
+    <ClInclude Include="Graphics\Shader.h" />
+    <ClInclude Include="Memory\AMP_HashMap.h" />
+    <ClInclude Include="Memory\AMP_Memory.h" />
+    <ClInclude Include="Static\Camera.h" />
+    <ClInclude Include="Static\TimeManager.h" />
+    <ClInclude Include="Memory\CurrentSceneContainer.h" />
+    <ClInclude Include="Physics\PhysicsWrapper.h" />
+    <ClInclude Include="Components\DynamicMesh.h" />
+    <ClInclude Include="Components\DynamicConcaveMesh.h" />
+    <ClInclude Include="Physics\PhysicHelper.h" />
+    <ClInclude Include="Graphics\CubeMap.h" />
+    <ClInclude Include="Graphics\GLHelper.h" />
+    <ClInclude Include="Components\Animation.h" />
+    <ClInclude Include="Components\Image.h" />
+    <ClInclude Include="Components\TouchGesture.h" />
+    <ClInclude Include="TaskController.h" />
+    <ClInclude Include="Utility\TaskVector.h" />
+    <ClInclude Include="Components\ProgressBar.h" />
+    <ClInclude Include="Static\Pixel.h" />
+    <ClInclude Include="Components\NetworkUDP.h" />
+    <ClInclude Include="Utility\NetworkHelper.h" />
+    <ClInclude Include="Components\NetworkTCP.h" />
+    <ClInclude Include="Components\NetworkHTTP.h" />
+    <ClInclude Include="Sound\SoundPool.h" />
+    <ClInclude Include="Sound\SoundHelper.h" />
+    <ClInclude Include="Utility\DebugAndTesting.h" />
+  </ItemGroup>
+</Project>
